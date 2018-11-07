@@ -1,19 +1,17 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
 
 public class TestBase {
 
-    private void setUp() {
+       public static final WebDriver driver = new ChromeDriver();
 
-
-        WebDriver driver = new ChromeDriver();
-    }
 
 
     public static void main(String[] args) {
-        System.setProperties("webdriver.chrome.driver", "src/main/resources/chromedriver");
+        System.setProperties("webdriver.chrome.driver" , "src/main/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
+
 
 
     }
@@ -21,3 +19,4 @@ public class TestBase {
 
 //@FindBy(id = "idOfYourElement")
 //private WebElement myLocator;
+
