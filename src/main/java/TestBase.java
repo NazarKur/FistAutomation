@@ -18,3 +18,6 @@ public class TestBase {
 
     }
 }
+
+//@FindBy(id = "idOfYourElement")
+//private WebElement myLocator;
